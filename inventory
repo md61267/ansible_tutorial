@@ -1,2 +1,8 @@
-192.168.178.19
-192.168.178.31
+[web_servers]
+192.168.178.19 tmux_package=tmux mc_package=mc
+192.168.178.31 tmux_package=tmux mc_package=mc
+
+[pve_servers]
+192.168.178.2  proxmox_packages=proxmox
+192.168.178.27 proxmox_packages=proxmox
+

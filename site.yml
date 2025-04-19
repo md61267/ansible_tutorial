@@ -1,0 +1,27 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install tmux and mc and update cache
+    apt:
+      name: 
+        - "{{ tmux_package }}"
+        - "{{  mc_package }}"
+      state: latest
+      upgrade: dist
+      update_cache: yes
+
+- hosts: pve_servers
+  become: true
+  tasks:
+
+  - name: install proxmox
+    apt:
+      name:
+        - "{{ proxmox_package }}"
+      state: latest
+      upgrade: dist
+      update_cache: yes
+

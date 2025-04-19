@@ -4,19 +4,11 @@
   become: true
   tasks:
 
-  - name: update repository index
-    apt:
+  - name: install tmux and mc and update cache
+    package:
+      name: 
+        - "{{ tmux_package }}"
+        - "{{  mc_package }}"
+      state: latest
       update_cache: yes
-    when: ansible_distribution in ["Debian", "Ubuntu"]
 
-  - name: install tmux
-    apt:
-      name: tmux
-      state: latest
-    when: ansible_distribution in ["Debian", "Ubuntu"]
-
-  - name: install mc
-    apt:
-      name: mc
-      state: latest
-    when: ansible_distribution in ["Debian", "Ubuntu"]

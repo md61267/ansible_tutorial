@@ -1,0 +1,19 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: update repository index
+    apt:
+      update_cache: yes
+
+  - name: install tmux
+    apt:
+      name: tmux
+      state: latest
+
+  - name: install mc
+    apt:
+      name: mc
+      state: latest

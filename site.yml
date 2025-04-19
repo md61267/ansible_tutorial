@@ -10,7 +10,6 @@
         - "{{ tmux_package }}"
         - "{{  mc_package }}"
       state: latest
-      upgrade: dist
       update_cache: yes
 
 - hosts: pve_servers
@@ -22,6 +21,5 @@
       name:
         - "{{ proxmox_package }}"
       state: latest
-      upgrade: dist
       update_cache: yes
 

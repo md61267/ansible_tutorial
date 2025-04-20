@@ -1,4 +1,3 @@
-[web_servers]
 192.168.178.19 tmux_package=tmux mc_package=mc
 192.168.178.31 tmux_package=tmux mc_package=mc
 
@@ -6,3 +5,4 @@
 192.168.178.2  proxmox_package=proxmox tmux_package=tmux mc_package=mc
 192.168.178.27 proxmox_package=proxmox tmux_package=tmux mc_package=mc
 
+[web_servers]

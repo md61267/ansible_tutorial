@@ -1,9 +1,8 @@
 [pve_servers]
-192.168.178.2  proxmox_package=proxmox tmux_package=tmux mc_package=mc
-192.168.178.27 proxmox_package=proxmox tmux_package=tmux mc_package=mc
+192.168.178.2  
+192.168.178.27 
 
 [web_servers]
-192.168.178.19 tmux_package=tmux mc_package=mc
 
 [workstations]
 192.168.178.31
